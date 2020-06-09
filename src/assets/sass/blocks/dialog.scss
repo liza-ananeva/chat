@@ -1,0 +1,33 @@
+.dialog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.dialog__photo-wrapper {
+    width: 47px;
+    height: 47px;
+    margin-right: 12px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.dialog__photo {
+    max-width: 100%;
+}
+
+.dialog__wrapper {
+    align-items: center;
+}
+
+.dialog__peer {
+    line-height: 1
+}
+
+.dialog__short-message {
+    color: #7f91a4;
+}

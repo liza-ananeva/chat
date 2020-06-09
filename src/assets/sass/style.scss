@@ -1,0 +1,31 @@
+//z-index
+$z-auth: 10;
+$z-chat: 10;
+$z-upload-dialog: 100;
+$z-upload: 1000;
+$z-filter: 2000;
+
+//normalize
+@import "_misc/normalize.scss";
+
+//setup
+@import "_misc/fonts.scss";
+@import "_misc/layout.scss";
+
+//mixin
+@import "_misc/mixin.scss";
+
+//blocks
+@import "blocks/error-message.scss";
+@import "blocks/auth.scss";
+@import "blocks/auth-form.scss";
+@import "blocks/btn.scss";
+@import "blocks/chat.scss";
+@import "blocks/dialogs.scss";
+@import "blocks/hamburger-menu.scss";
+@import "blocks/dialog.scss";
+@import "blocks/conversation.scss";
+@import "blocks/history.scss";
+@import "blocks/send-message.scss";
+@import "blocks/upload-dialog.scss";
+@import "blocks/upload.scss";

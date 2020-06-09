@@ -1,0 +1,72 @@
+.upload-dialog-wrapper {
+    width: 364px + 2px;
+    height: 220px + 2px;
+    border: 1px solid #737e87;
+//    margin: auto;
+    position: absolute;
+    top: calc(50% - 110px);
+    left: calc(50% - 182px);
+    z-index: $z-upload-dialog;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.upload-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 35px 33px 42px 33px;
+    background-color: #17212b;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.upload-dialog__close {
+    width: 23px;
+    height: 23px;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+}
+
+.upload-dialog__close-icon {
+    @include close-icon;
+}
+
+.upload-dialog__details {
+    display: flex;
+    align-items: center;
+}
+
+.upload-dialog__title {
+    margin-bottom: 35px;
+}
+
+.upload-dialog__picture {
+    display: block;
+    width: 87px;
+    height: 87px;
+    margin-right: 17px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.upload-dialog__pic {
+    max-width: 100%;
+}
+
+.upload-dialog__username {
+    margin-bottom: 6px;
+}
+
+.upload-dialog__userstatus {
+    color: #51b3f3;
+    font-size: 14px;
+    font-weight: 300;
+}

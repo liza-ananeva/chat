@@ -1,0 +1,33 @@
+.dialogs__panel {
+    max-height: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { 
+        display: none;
+    }
+}
+
+.dialogs__toolbar {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.dialogs__search {
+    width: 195px;
+    height: 32px;
+    padding: 8px 6px;
+    color: #fff;
+    background-color: #242f3d;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        color: #6d7883;
+    }
+}
+
+.dialogs__list {
+    padding: 10px 15px;
+}

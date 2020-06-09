@@ -1,0 +1,36 @@
+.btn {
+    background-color: #5288c1;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 5px;
+
+    &--login {
+        display: block;
+        padding: 9.5px 39.8px;
+        margin: 0 auto;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &--send {
+        display: block;
+        padding: 2px 18px;
+        margin: auto;
+        font-weight: 400;
+    }
+
+    &--cancel, &--upload {
+        padding: 6px 12.2px;
+        color: #6ab2f2;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &--cancel {
+        background-color: transparent;
+    }
+
+    &--upload {
+        background-color: #1d2a39;
+    }
+}

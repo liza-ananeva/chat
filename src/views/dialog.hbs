@@ -1,0 +1,11 @@
+{{#if user}}
+<li class="dialogs__item dialog" data-user="{{user.id}}">
+    <div class="dialog__photo-wrapper">
+        <img src="{{user.photo}}" alt="{{user.login}}" class="dialog__photo">
+    </div>
+    <div class="dialog__wrapper">
+        <div class="dialog__peer">{{user.login}}</div>
+        <div class="dialog__short-message">{{text}}</div>
+    </div>
+</li>
+{{/if}}

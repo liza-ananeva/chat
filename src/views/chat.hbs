@@ -1,0 +1,39 @@
+<div class="chat-wrapper">
+    <div class="chat">
+        <div class="chat__top-panel">
+            <a href="#" class="chat__controls"></a>
+        </div>
+        <div class="chat__container">
+            <div class="chat__leftside dialogs">
+                <div class="dialogs__panel">
+                    <div class="dialogs__toolbar">
+                        <button type="button" class="hamburger-menu">
+                            <div class="hamburger-menu__bars"></div>
+                        </button>
+                        <input type="text" class="dialogs__search" placeholder="Найти...">
+                    </div>
+                    <ul class="dialogs__list">
+                        {{>'../views/dialog.hbs'}}
+                    </ul>
+                </div>
+            </div>
+            <div class="chat__rightside conversation">
+                <div class="conversation__details">
+                    <div class="conversation__topic">Чат</div>
+                    <div class="conversation__participants">Активных участников: </div>
+                </div>
+                <div class="history">
+                    <ol class="history__peers">
+                        {{>'../views/peer.hbs'}}
+                    </ol>
+                </div>
+                <div class="send-message">
+                    <form action="#" class="send-message__form">
+                        <input id="send-message-field" class="send-message__field" placeholder="Введите сообщение..." autocomplete="off"></input>
+                        <button type="submit" id="send" class="btn btn--send">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

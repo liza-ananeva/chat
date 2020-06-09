@@ -1,0 +1,45 @@
+    {{#if user}}
+    {{#if currentUser}}
+        <li class="history__peer history__peer--right" data-user="{{user.id}}">
+            {{#if lastUser}}
+            <div class="history__message-wrapper">
+                <div class="history__message">
+                    <div class="history__message-text">{{text}}</div>
+                    <div class="history__message-time">{{time}}</div>
+                </div>
+            </div>
+            <div class="history__photo-wrapper">
+                <img src="{{user.photo}}" alt="{{user.login}}" class="history__photo">
+            </div>
+            {{else}}
+            <div class="history__message-wrapper" style="margin-right: 43px;">
+                <div class="history__message">
+                    <div class="history__message-text">{{text}}</div>
+                    <div class="history__message-time">{{time}}</div>
+                </div>
+            </div>
+            {{/if}}
+        </li>
+    {{else}}
+        <li class="history__peer history__peer--left" data-user="{{user.id}}">
+            {{#if lastUser}}
+            <div class="history__photo-wrapper">
+                <img src="{{user.photo}}" alt="{{user.login}}" class="history__photo">
+            </div>
+            <div class="history__message-wrapper">
+                <div class="history__message">
+                    <div class="history__message-text">{{text}}</div>
+                    <div class="history__message-time">{{time}}</div>
+                </div>
+            </div>
+            {{else}}
+            <div class="history__message-wrapper" style="margin-left: 43px;">
+                <div class="history__message">
+                    <div class="history__message-text">{{text}}</div>
+                    <div class="history__message-time">{{time}}</div>
+                </div>
+            </div>
+            {{/if}}
+        </li>
+    {{/if}}
+    {{/if}}

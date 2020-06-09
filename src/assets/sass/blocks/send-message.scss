@@ -1,0 +1,25 @@
+.send-message {
+    height: 54px;
+    border: 1px solid #101921;
+    border-right: none;
+    border-bottom: none;
+}
+
+.send-message__form {
+    height: 100%;
+    display: flex;
+}
+
+.send-message__field {
+    width: 420px;
+    height: 100%;
+    padding: 17px 14px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        color: #5b6774;
+    }
+}

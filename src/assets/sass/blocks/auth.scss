@@ -1,0 +1,61 @@
+.auth-wrapper {
+    width: 516px;
+    height: 552px;
+    margin: auto;
+    z-index: $z-auth;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.auth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17212b;
+    padding: 40px 108px 46px 108px;
+    position: relative;
+}
+
+.auth__close {
+    width: 23px;
+    height: 23px;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+}
+
+.auth__close-icon {
+    @include close-icon;
+}
+
+.auth__picture {
+    width: 139px;
+    height: 139px;
+    margin-bottom: 35px;
+}
+
+.auth__pic {
+    max-width: 100%;
+}
+
+.auth__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.auth__desc {
+    color: #7f91a4;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
